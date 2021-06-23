@@ -7,11 +7,11 @@ import './collections-overview.styles.scss';
 import CollectionContext from '../../contexts/collections/collections.context'
 
 const CollectionsOverview = () => {
-  
-  const collectionsMap = useContext(CollectionContext)
 
-  const collections = Object.keys(collectionsMap).map(
-    key =>collectionsMap[key]
+  const collectionsToMap = useContext(CollectionContext)
+
+  const collections = Object.keys(collectionsToMap).map(
+    key =>collectionsToMap[key]
   )
 
   return(
